@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights.sdk"
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/azurstorageaccount1991",
+      "type": "storage.azure",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "cosmosdb2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdbaccount1991",
+      "type": "cosmosdb.azure",
+      "connectionId": "azurecosmosDB",
+      "secretStore": null
+    }
+  }
+}

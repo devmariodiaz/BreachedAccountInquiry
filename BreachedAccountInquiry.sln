@@ -1,19 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30914.41
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inquiry.Func", "src\Services\Inquiry\Inquiry.Function\Inquiry.Func.csproj", "{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inquiry.Func", "src\Inquiry.FunctionApp\Inquiry.FunctionApp.Api\Inquiry.Func.csproj", "{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{935E94E1-99C6-49B5-8FB9-C4F7AA057001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inquiry.Func.UnitTests", "src\Inquiry.FunctionApp\Inquiry.FunctionApp.Api.UnitTests\Inquiry.Func.UnitTests.csproj", "{601F86A6-952C-4A9B-A0FB-BCC97A115018}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inquiry", "Inquiry", "{F5B4507B-1887-4D7E-8DE6-F6876F99C0A2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Breach", "Breach", "{F6150108-AEFA-459C-BB45-2A1D07DFE419}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubBreach.API", "src\Services\Breach\StubBreach.API\StubBreach.API.csproj", "{83370545-EB5E-43C3-B902-E0CC84210DCE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inquiry.Func.UnitTests", "src\Services\Inquiry\Inquiry.Func.UnitTests\Inquiry.Func.UnitTests.csproj", "{601F86A6-952C-4A9B-A0FB-BCC97A115018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StubBreach.API", "src\StubBreach.API\StubBreach.API.csproj", "{341D9111-A110-4710-A52F-2EAEFCB5C5E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,24 +19,17 @@ Global
 		{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83370545-EB5E-43C3-B902-E0CC84210DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83370545-EB5E-43C3-B902-E0CC84210DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83370545-EB5E-43C3-B902-E0CC84210DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83370545-EB5E-43C3-B902-E0CC84210DCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{601F86A6-952C-4A9B-A0FB-BCC97A115018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{601F86A6-952C-4A9B-A0FB-BCC97A115018}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{601F86A6-952C-4A9B-A0FB-BCC97A115018}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{601F86A6-952C-4A9B-A0FB-BCC97A115018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341D9111-A110-4710-A52F-2EAEFCB5C5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341D9111-A110-4710-A52F-2EAEFCB5C5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341D9111-A110-4710-A52F-2EAEFCB5C5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341D9111-A110-4710-A52F-2EAEFCB5C5E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{B3BC90B8-6A5A-42DB-A091-5FF8B1DABF96} = {F5B4507B-1887-4D7E-8DE6-F6876F99C0A2}
-		{F5B4507B-1887-4D7E-8DE6-F6876F99C0A2} = {935E94E1-99C6-49B5-8FB9-C4F7AA057001}
-		{F6150108-AEFA-459C-BB45-2A1D07DFE419} = {935E94E1-99C6-49B5-8FB9-C4F7AA057001}
-		{83370545-EB5E-43C3-B902-E0CC84210DCE} = {F6150108-AEFA-459C-BB45-2A1D07DFE419}
-		{601F86A6-952C-4A9B-A0FB-BCC97A115018} = {F5B4507B-1887-4D7E-8DE6-F6876F99C0A2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9C3A8E50-5B53-4761-B7FD-76F6B6E25E35}

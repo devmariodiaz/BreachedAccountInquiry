@@ -18,7 +18,7 @@ namespace Inquiry.Func.UnitTests
         private readonly Mock<Microsoft.Extensions.Logging.ILogger> _mockLogger = new();
 
         [Fact]
-        public async Task Breaches_GivePayloadIsNotValid_ReturnBadRequest()
+        public async Task Breaches_GivenPayloadIsNotValid_ReturnBadRequest()
         {
             //Arrange
             var breachedInquiryFun = new BreachedInquiryFun();
@@ -34,7 +34,7 @@ namespace Inquiry.Func.UnitTests
         }
 
         [Fact]
-        public async Task Breaches_GiveAccountIsEmpty_ReturnBadRequest()
+        public async Task Breaches_GivenAccountIsEmpty_ReturnBadRequest()
         {
             //Arrange
             var breachedInquiryFun = new BreachedInquiryFun();
@@ -51,7 +51,7 @@ namespace Inquiry.Func.UnitTests
         }
 
         [Fact]
-        public async Task Breaches_GiveAccountIsValid_InsertRequestIntoQueue()
+        public async Task Breaches_GivenAccountIsValid_InsertRequestIntoQueue()
         {
             //Arrange
             var breachedInquiryFun = new BreachedInquiryFun();
@@ -69,7 +69,7 @@ namespace Inquiry.Func.UnitTests
         }
 
         [Fact]
-        public async Task Breaches_GiveAccountIsValid_ReturnOk()
+        public async Task Breaches_GivenAccountIsValid_ReturnOk()
         {
             //Arrange
             var breachedInquiryFun = new BreachedInquiryFun();
